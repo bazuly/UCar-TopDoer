@@ -1,7 +1,7 @@
 # 🚀 Testcase UCarTopDoer
+# 1. Установка (одной командой) bash
 
-```bash
-# 1. Установка (одной командой)
+```
 git clone git@github.com:bazuly/UCar-TopDoer.git && cd UCarTopDoer && \
   (curl -LsSf https://astral.sh/uv/install.sh | sh || powershell -c "irm https://astral.sh/uv/install.ps1 | iex") && \
   uv venv .venv && source .venv/bin/activate && uv sync
