@@ -2,7 +2,7 @@
 # 1. Установка (одной командой) bash
 
 ```
-git clone git@github.com:bazuly/UCar-TopDoer.git && cd UCarTopDoer && \
+git clone git@github.com:bazuly/UCar-TopDoer.git && cd UCar-TopDoer && \
   (curl -LsSf https://astral.sh/uv/install.sh | sh || powershell -c "irm https://astral.sh/uv/install.ps1 | iex") && \
   uv venv .venv && source .venv/bin/activate && uv sync
 ```
