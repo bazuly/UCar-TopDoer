@@ -1,4 +1,4 @@
-# 🚀 UCarTopDoer - Sentiment Analysis API
+# 🚀 Testcase UCarTopDoer
 
 ```bash
 # 1. Установка (одной командой)
