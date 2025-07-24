@@ -2,42 +2,35 @@
 
 ```bash
 # 1. Установка (одной командой)
-git clone https://github.com/yourusername/UCarTopDoer.git && cd UCarTopDoer && \
+git clone git@github.com:bazuly/UCar-TopDoer.git && cd UCarTopDoer && \
   (curl -LsSf https://astral.sh/uv/install.sh | sh || powershell -c "irm https://astral.sh/uv/install.ps1 | iex") && \
   uv venv .venv && source .venv/bin/activate && uv sync
+```
 
 # 2. Миграции БД
+```
 make migrate-create
 make migrate-apply
+```
 
 # 3. Запуск сервера
+```
 make run locally
-
-# installation 
-
-git clone ....
-cd UCarTopDoer
-uv installation 
-mac os | linux 
-curl -LsSf https://astral.sh/uv/install.sh | sh
-windows
-powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
-
-uv venv .venv
-uv sync
-make migrate-apply
-make migrate-create
-make migrate-apply
+```
 
 
-curls
+Пример тестирования через CURL.
+Также всегда можно протестировать через встроенный Swagger Fastapi. 
+http://127.0.0.1:8000/docs/
 
+```
 POST:
 curl -X POST "http://localhost:8000/reviews" \
 -H "Content-Type: application/json" \
 -d '{"text":"Сервис просто отличный, мне нравится!"}'
+```
 
-ответ:
+Ответ:
 {
   "id": 1,
   "text": "Сервис просто отличный, мне нравится!",
@@ -45,9 +38,11 @@ curl -X POST "http://localhost:8000/reviews" \
   "created_at": "2023-10-25T12:34:56.789Z"
 }
 
+```
 GET:
 curl "http://localhost:8000/reviews?sentiment=negative"
-
+```
+Ответ:
 [
   {
     "id": 2,
