@@ -9,6 +9,7 @@ git clone git@github.com:bazuly/UCar-TopDoer.git && cd UCar-TopDoer && \
 
 # 2. Миграции БД
 ```
+make migrate-apply
 make migrate-create
 make migrate-apply
 ```
